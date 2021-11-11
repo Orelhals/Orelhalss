@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e4e1e1;
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+}
+
+
+
+.menu a {
+  text-transform: uppercase;
+  background: #fff;
+  padding: 1rem 2rem ;
+  border-radius: 4px;
+  margin: 0px;
+  color: black;
+  margin-bottom: 3rem;
+  display: block;
+  border: 2px solid #fff;
+  /* adicionar a borda no menu a, depois adicionar a borda no .menu a:hover (pra nào ficar empurrando os itens pra baixo!!!! */
+  
+}
+
+.menu a:hover {
+  border: 2px solid #e21;
+}
+
+ a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p, h1 , h2 , h3 {
+  margin: 0px;
+}
+
+
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+
+
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+
+
+.bloco1 {
+  background: white;
+  padding: 40px ;
+  display: grid;
+  align-content: center;
+  justify-items: end;
+  gap: 20px;
+  text-align: right;
+  
+}
+
+.bloco1 h1 {
+  font-size: 2rem;
+}
+
+.botao {
+  background: #e21;
+  padding: 17px 30px ;
+  color: white;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.bloco1 a:hover {
+  background-color: rgb(105, 4, 4);
+  color: #fff;
+}
+
+.vantagens {
+  color: #c6c6c6;
+  font-size: 4rem ;
+  text-align: right;
+  text-transform: uppercase;
+  padding: 40px;
+  /*word-break: break-all; (para quebrar as linhas)*/
+  
+}
+
+
+
+
+.especificacoes {
+  background: white;
+  padding: 20px;
+  margin: 0px;
+}
+
+.especificacoes-um {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 30px;
+  gap:4px 20px;
+  border-left: solid 4px transparent;
+ 
+}
+
+.especificacoes-um:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+.especificacoes-um:hover {
+  border-left: solid 4px #e21;
+}
+
+.especificacoes-um p {
+  grid-column: 2;
+}
+
+.rodape {
+  background: white;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
