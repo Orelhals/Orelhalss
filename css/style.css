@@ -7,12 +7,24 @@ body {
   margin-top: 50px;
 }
 
+@media (max-width:600px) {
+  body {
+    gap: 20px;
+  }
+}
+
 .header {
   display: grid;
   justify-items: center;
   gap: 60px;
 }
 
+
+@media (max-width:600px) {
+  .header {
+    gap: 20px;
+  }
+}
 
 
 .menu a {
@@ -43,6 +55,12 @@ p {
 }
 
 
+@media (max-width:600px) {
+  .bloco1 p {
+    text-align: left;
+  }
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -63,14 +81,19 @@ p, h1 , h2 , h3 {
 }
 
 
-
-
 .conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
 }
 
+@media (max-width:600px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+    margin: 100px auto;
+  }
+}
+  
 
 
 .bloco1 {
@@ -84,8 +107,20 @@ p, h1 , h2 , h3 {
   
 }
 
+@media (max-width:600px) {
+  .bloco1 {
+    justify-items: start;
+  }
+}
+
 .bloco1 h1 {
   font-size: 2rem;
+}
+
+.bloco1-cover img {
+  object-fit: cover;
+  height: 100%;
+  object-position: center;
 }
 
 .botao {
@@ -111,7 +146,16 @@ p, h1 , h2 , h3 {
   
 }
 
-
+@media (max-width:1000px) {
+  .conteudo-vantagens {
+    grid-template-columns: 1fr;
+  }
+  .vantagens {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+}
 
 
 .especificacoes {
